@@ -68,7 +68,14 @@ Drain efficiency ($\eta_D$) was evaluated at the measurement point closest to th
 \end{equation}
 
 where $P_{out,PA}$ is the output power delivered by the amplifier and $P_{DC}$
-is the DC power consumed. A drain efficiency of 32.94\% was obtained.
+is the DC power consumed. A drain efficiency of 32.94\% was obtained. The power-added efficiency at the same operating point, computed as
+
+\begin{equation}
+    \text{PAE} = \frac{P_{out,PA} - P_{in,PA}}{P_{DC}} \times 100\%,
+    \label{eq_pae}
+\end{equation}
+
+was 30.51\%.
 
 \subsubsection{Bandwidth}
 The operating bandwidth was determined from the measured $S_{11}$ response. The two frequency points at which $S_{11}$ crosses the $-10$\,dB threshold within the region of interest were identified, and the bandwidth was defined as their difference, obtaining a 70\,MHz value.
@@ -112,15 +119,16 @@ Table~\ref{tab:pa_results} summarizes the key measured performance parameters of
     \renewcommand{\arraystretch}{1.15}
         \begin{tabular}{lc}
         \hline\hline
-        \textbf{Parameter}                         & \textbf{Value}                        \\
+        \textbf{Parameter}                         & \textbf{Value}                 \\
         \hline
-        Center Frequency                           & 2.11\,GHz                             \\
-        Bandwidth (BW)                             & 70\,MHz                               \\
-        1\,dB Compression Point ($P_{1\text{dB}}$) & 30.30\,dBm                            \\
-        Third-Order Intercept ($\text{OIP}_3$)     & 39.83\,dBm                            \\
-        Small-Signal Gain                          & 13.26\,dB                             \\
-        Drain Efficiency                           & 32.94\% @ $P_{out}=30.92\,\text{dBm}$ \\
-        VSWR                                       & $<$1.92:1                             \\
+        Center Frequency                           & 2.11\,GHz                      \\
+        Bandwidth (BW)                             & 70\,MHz                        \\
+        1\,dB Compression Point ($P_{1\text{dB}}$) & 30.30\,dBm                     \\
+        Third-Order Intercept ($\text{OIP}_3$)     & 39.83\,dBm                     \\
+        Small-Signal Gain                          & 13.26\,dB                      \\
+        Drain Efficiency                           & 32.94\% @ $P_{out}=30.92$\,dBm \\
+        PAE                                        & 30.51\% @ $P_{out}=30.92$\,dBm \\
+        VSWR                                       & $<$1.92:1                      \\
         \hline\hline
         \end{tabular}
 \end{table}
