@@ -2,7 +2,7 @@
 \subsection{Measured S-Parameters}
 Figs.~\ref{fig:s11_plot} and~\ref{fig:s21_plot} present the simulated and measured $S_{11}$ and $S_{21}$ parameters, respectively, over the DC--5\,GHz range. A resonance outside the band of interest was identified in the measured response. This feature was not predicted by the original simulation model and is attributed to parasitic effects of the PCB layout and component packaging that were not fully captured in the initial model.
 
-The measured center frequency is 2.11\,GHz, corresponding to a 90\,MHz shift from the design target of 2.2\,GHz. This shift is attributed to the series equivalent inductance (ESL) of the stabilization resistors, which was not accounted for in the original model. Incorporating an ESL of 0.5\,nH per resistor, a value consistent with published data for 0603-package thin-film resistors \cite{VishayTN}, brings the simulated center frequency into agreement with the measurement. The overall small-signal behavior closely matches the design objectives.
+The measured center frequency is 2.11\,GHz, corresponding to a 90\,MHz shift from the design target of 2.2\,GHz. This shift is attributed to the series equivalent inductance (ESL) of the stabilization resistors, which was not accounted for in the original model. Incorporating an ESL of 0.5\,nH per resistor, a value consistent with published data for 0603-package thin-film resistors \cite{VishayTN}, brings the simulated center frequency into agreement with the measurement. At the nominal operating frequency of 2.2\,GHz, where all large-signal measurements were performed, the measured $S_{11}$ and $S_{21}$ are $-5.4$\,dB and 12.2\,dB, respectively. Although this frequency lies outside the $S_{11}<-10$\,dB bandwidth, the amplifier meets the output power and efficiency targets at 2.2\,GHz.
 
 \begin{figure*}[t]
     \centering
@@ -100,13 +100,12 @@ The OIP3 was determined for the driver and power amplifier chain. Fig.~\ref{fig:
 
 An OIP3 of $39.83\,\text{dBm}$ was obtained. This value is consistent with the expected experimental relationship between the P1dB and the OIP3, where the OIP3 is usually 10 to 15 dB larger than the P1dB~\cite[p.~516]{Pozar2012}.
 
-\begin{figure}[b]
+\begin{figure}[t]
     \centering
     \includegraphics[width=1\linewidth]{imgs/oip3_plot.png}
     \caption{Frequency sweep of the measured output third-order intercept point (OIP3) for the driver–DUT chain.}
     \label{fig:oip3}
 \end{figure}
-
 
 % =========================================================================== %
 \subsection{Summary of Results}
@@ -125,7 +124,7 @@ Table~\ref{tab:pa_results} summarizes the key measured performance parameters of
         Bandwidth (BW)                             & 70\,MHz                        \\
         1\,dB Compression Point ($P_{1\text{dB}}$) & 30.30\,dBm                     \\
         Third-Order Intercept ($\text{OIP}_3$)     & 39.83\,dBm                     \\
-        Small-Signal Gain                          & 13.26\,dB                      \\
+        Small-Signal Gain ($P_{in}=-20$\,dBm)      & 13.26\,dB                      \\
         Drain Efficiency                           & 32.94\% @ $P_{out}=30.92$\,dBm \\
         PAE                                        & 30.51\% @ $P_{out}=30.92$\,dBm \\
         VSWR                                       & $<$1.92:1                      \\
