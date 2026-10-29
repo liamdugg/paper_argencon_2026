@@ -1,0 +1,79 @@
+
+% EJEMPLO DE FIGURE
+\begin{figure}[htbp]
+    \centerline{\includegraphics{fig1.png}}
+    \caption{Example of a figure caption.}
+    \label{fig}
+\end{figure}
+
+% EJEMPLO DE ECUACION
+\subsection{Equations}
+\begin{equation}
+    a+b=\gamma\label{eq}
+\end{equation}
+
+% EJEMPLO DE TABLA
+\begin{table}[htbp]
+\caption{Table Type Styles}
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|}
+            \hline
+            \textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
+            \cline{2-4} 
+            \textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}&          \textbf{\textit{Subhead}} \\
+            \hline
+            copy& More table copy$^{\mathrm{a}}$& &  \\
+            \hline
+            \multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
+        \end{tabular}
+    \label{tab1}
+    \end{center}
+\end{table}
+
+
+\subsection{Figures and Tables}
+Place figures and tables at the top and bottom of columns. 
+Avoid placing them in the middle of columns. 
+Large figures and tables may span across both columns. 
+Figure captions should be below the figures; table heads should appear above the tables. 
+Insert figures and tables after they are cited in the text. 
+Use the abbreviation ``Fig.~\ref{fig}'', even at the beginning of a sentence.
+
+Use 8 point Times New Roman for Figure labels. 
+Use words rather than symbols or abbreviations for Figure axis labels to avoid confusing the reader. 
+As an example, write the quantity ``Magnetization'', or ``Magnetization, M'', not just ``M''. 
+If including units in the label, present them within parentheses. Do not label axes only  with units.
+
+
+Be sure that the symbols in your equation have been defined before or immediately following the equation. 
+Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at the beginning of a sentence: ``Equation \eqref{eq} is . . .''
+
+Please don't use the \verb|{eqnarray}| equation environment. Use \verb|{align}| or \verb|{IEEEeqnarray}| instead.
+
+{\BibTeX} does not work by magic. It doesn't get the bibliographicdata from thin air but from .bib files. 
+If you use {\BibTeX} to produce a bibliography you must send the .bib files. 
+
+\subsection{Some Common Mistakes}\label{SCM}
+The word ``data'' is plural, not singular.
+
+The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero not a lowercase letter o.
+
+Commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. 
+When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. 
+A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
+
+A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
+
+Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
+
+In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
+
+Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
+
+Do not confuse ``imply'' and ``infer''.
+
+The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
+
+There is no period after the ``et'' in the Latin abbreviation ``et al.''.
+
+The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
